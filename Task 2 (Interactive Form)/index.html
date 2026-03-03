@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=7">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta name="description" content="HINATA is a social media platform for connecting with friends and sharing experiences.">
+     <meta name="keywords" content="HINATA, social media, friends, sharing">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>HINATA Sign up</title>
+     <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+    <div id="container">
+        <div id="form-container">
+            <div class="form-title">
+                <h1>HINATA</h1>
+                <h2>Sign Up to HINATA to have fun more than ever before!</h2>
+            </div>
+            <div id="form-fields">
+                <form id="regist-form" novalidate action="endpoint.php>
+                    <div class="field-item">
+                        <label for="full-name">Full Name</label>
+                        <input type="text"id="full-name" name="full-name"placeholder="Enter your full name" required>
+                    </div>
+                    <div class="field-item">
+                        <label for="email-address">Email Address</label>
+                        <input type="email"id="email-address" name="email-address" placeholder="your.email@gmail.com" required>
+                    </div>
+                    <div class="field-item">
+                        <label for="phone-no">Phone Number</label>
+                        <input type="tel"id="phone-no" name="phone-no"placeholder="0(12) 234 543 213" required >
+                    </div>
+                    <div class="field-item">
+                        <label for="password">Password</label>
+                        <input type="password"id="password" name="password" placeholder="create a strong password" required>
+                        <ul>
+                            <li>At least 8 characters</li>
+                            <li>Include uppercase and lowercase letters</li>
+                            <li>Include at least one special character</li>
+                            <li>Include at least one number</li>
+                        </ul>
+                    </div>
+                    <div class="field-item">
+                        <label for="confirmed-password">Conform Password</label>
+                        <input type="password"id="confirmed-password" name="confirmed-password" placeholder="re-enter the password " required>
+                    </div>
+                    <div class="field-item">
+                        <input type="submit" form="regist-form" value="Sign Up">
+                    </div> 
+                </form>  
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
