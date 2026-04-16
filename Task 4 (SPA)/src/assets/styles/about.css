@@ -1,0 +1,103 @@
+/* Story Section CSS*/
+.story-section{
+    margin:100px ;
+}
+.story-details h1{
+    color:var(--title-color);
+    font-size: 80px;
+    font-family: serif;
+}
+.story-details h1 span{
+    color:var(--brown);
+}
+.story-details p {
+  color:var(--text);
+  font-size: 20px;
+}
+@media (max-width: 991.98px) {
+  .story-image img {
+    width: 80%;
+    display: block;
+    margin: 0 auto; /* center it */
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 575.98px) {
+  .story-image img {
+    width: 100%;
+  }
+}
+
+/* Principles Section CSS*/
+.Principles-Section{
+    margin-top: 100px;
+    padding:100px;
+}
+.Principles-Section h1{
+    font-family:serif;
+    font-weight: lighter;
+  }
+.Principles-cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.Principles-card{
+    border:1px solid rgb(194, 186, 186);
+    width:320px;
+    height:300px;
+    padding: 40px;
+}
+.Principles-card .icon{
+    background-color: var(--beige);
+    border:1px solid var(--bg);
+    border-radius: 200px;
+    width:30px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+.Principles-card p{
+    color:var(--text);
+}
+.Principles-card:hover{
+    background-color: white;
+}
+
+/* People Studio Section CSS*/
+.people-studio-section{
+    background-color: white;
+    padding: 100px;
+}
+
+.studio-title h1{
+    font-family: serif;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.studio-card-image{
+    display: flex;
+    justify-content: center;
+}
+.studio-card-image img{
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+}
+.studio-card-content{
+    margin-top: 20px;
+    text-align: center;
+}
+.studio-card-content h5{
+    color: var(--title-color);
+}
+.studio-card-content p{
+    color: var(--text);
+}
+.studio-card {
+    margin-top: 20px;
+}

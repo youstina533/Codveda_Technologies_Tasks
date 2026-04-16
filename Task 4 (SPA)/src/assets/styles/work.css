@@ -1,0 +1,101 @@
+/* Projects Section CSS*/
+.projects-title {
+    margin: 100px;
+}
+.projects-title h1{
+    font-weight: lighter;
+    color: var(--title-color);
+    font-family: serif;
+    font-size: 70px;
+}
+.projects-title p{
+    font-family: serif;
+    color: var(--text);
+    font-size: 22px;
+    margin-top: 30px;
+}
+.projects-cards{
+    margin: 100px;
+    gap: 50px;
+   
+}
+.project-card{
+    margin-top: 20px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}      
+.project-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(126, 126, 126, 0.2);
+}            
+.project-card-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0; ;
+}
+.project-card-content{
+    padding: 20px;
+}
+.project-card-content h6{
+    color: var(--brown);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+/* ── Tablet ── */
+@media (max-width: 991.98px) {
+    .projects-cards {
+        margin: 60px 30px;
+        gap: 30px;
+    }
+    .projects-title {
+        margin: 100px 30px;
+    }
+}
+
+/* ── Mobile ── */
+@media (max-width: 575.98px) {
+    .projects-cards {
+        margin: 40px 15px; 
+        gap: 20px;
+        flex-direction: column;
+    }
+    .projects-title {
+        margin: 100px 15px;
+    }
+}
+
+/* Contact Button Section CSS */
+.contact-btn-dev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    height: 200px;
+}
+.contact-btn-dev p{
+    font-family: serif;
+    color: var(--text);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.dev-contact-btn{
+    padding: 12px 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+}
+.dev-contact-btn:hover{
+    background-color: var(--brown);
+    color: white;
+    transform: translateY(-2px);
+}

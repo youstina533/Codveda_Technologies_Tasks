@@ -1,0 +1,346 @@
+/* Hero Section CSS*/
+.hero-section {
+  margin: 100px;
+  background-color: var(--bg);
+}
+.hero-details h1 {
+  font-size: 90px;
+  color: var(--title-color);
+  font-family: serif;
+  font-weight: lighter;
+  line-height: 1.05;
+  word-break: break-word;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.hero-details span {
+  color: var(--brown);
+}
+.hero-details p {
+  color: var(--text);
+  font-size: 20px;
+  max-width: 90%;
+}
+.hero-btns {
+  margin-top: 50px;
+}
+.work-btn {
+  margin-right: 40px;
+  padding: 10px;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+.work-btn:hover {
+  background-color: var(--brown);
+  border: none;
+  transform: translateY(-3px);
+}
+.about-btn {
+  padding: 10px;
+  border: 1px solid var(--title-color);
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+.about-btn:hover {
+  background-color: var(--black);
+  color: white;
+  border: none;
+  transform: translateY(-3px);
+}
+.large-cart {
+  background-color: var(--brown);
+  height: auto;
+  min-height: 160px;
+  width: 580px;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(235, 228, 228);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.first-small-cart,
+.second-small-cart {
+  margin-top: 50px;
+  margin-right: 20px;
+  background-color: white;
+  height: auto;
+  min-height: 160px;
+  font-size: 1.25rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 40px;
+  color: var(--text);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.first-small-cart .no,
+.second-small-cart .no {
+  color: var(--black);
+  font-size: 40px;
+}
+.large-cart .no {
+  color: white;
+  font-size: 3.2rem;
+}
+
+/* Medium → large tablets (up to ~991px) */
+@media (max-width: 991.98px) {
+  .hero-section {
+    margin: 70px 35px;
+  }
+  .hero-details h1 {
+    font-size: 4.8rem;
+    line-height: 1.08;
+    margin-bottom: 28px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  .hero-details p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 95%;
+  }
+  .hero-btns {
+    gap: 18px;
+  }
+  .work-btn,
+  .about-btn {
+    padding: 14px 28px;
+    font-size: 1.05rem;
+  }
+  .hero-carts {
+    margin-top: 50px;
+  }
+  .large-cart,
+  .first-small-cart,
+  .second-small-cart {
+    height: auto;
+    padding: 28px 22px;
+  }
+}
+
+/* Mobile landscape + portrait (~768px and smaller) */
+@media (max-width: 767.98px) {
+  .hero-section {
+    margin: 100px 50px 24px 100px;
+  }
+  .hero-details h1 {
+    font-size: 2.4rem;
+    line-height: 1.12;
+    margin-bottom: 32px;
+    letter-spacing: -0.5px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .hero-details p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+  .hero-btns {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .work-btn,
+  .about-btn {
+    width: 100% !important;
+    padding: 14px;
+    font-size: 1rem;
+  }
+  /* Stats cards - stacked and safe */
+  .hero-carts .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .large-cart {
+    font-size: 1.7rem;
+    padding: 32px 24px;
+  }
+  .first-small-cart,
+  .second-small-cart {
+    font-size: 1.25rem;
+    padding: 28px 20px;
+  }
+  .no {
+    font-size: 3.4rem;
+    margin: 12px 0 8px;
+  }
+}
+
+/* Small phones (~576px and below) */
+@media (max-width: 575.98px) {
+  .hero-section {
+    margin: 130px 0px 24px 0px;
+  }
+  .hero-details h1 {
+    font-size: 3.6rem;
+    line-height: 1.15;
+    margin-bottom: 28px;
+    word-break: break-all;
+  }
+  .hero-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .large-cart {
+    font-size: 1.45rem;
+    padding: 24px 18px;
+  }
+  .first-small-cart,
+  .second-small-cart {
+    font-size: 1.1rem;
+    padding: 24px 18px;
+  }
+  .no {
+    font-size: 2.9rem;
+  }
+}
+
+/*Services Section CSS*/
+.services {
+  padding: 100px;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  min-height: 60vh;
+}
+.services-title {
+  font-family: serif;
+  font-size: 50px;
+}
+.services-carts {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.service-cart {
+  width: 300px;
+  height: 350px;
+  border: solid 1px rgb(224, 218, 218);
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+.service-cart:hover {
+  box-shadow: 0 2px 10px rgba(122, 120, 120, 0.2);
+  transform: translateY(-4px);
+}
+.service-cart h2 {
+  font-size: 30px;
+  font-family: serif;
+  margin-bottom: 20px;
+  color: var(--beige);
+}
+.service-cart h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.service-cart p {
+  color: var(--text);
+  font-size: 17px;
+}
+@media (max-width: 991.98px) {
+  .services {
+    padding: 80px 50px;
+  }
+  .services-title {
+    font-size: 42px;
+  }
+  .services-carts {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services {
+    padding: 60px 30px;
+  }
+  .services-title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .services-carts {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .service-cart {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    padding: 40px 30px;
+  }
+}
+
+/* Numbers section CSS*/
+.Numbers-section{
+  background-color: var(--black);
+  text-align: center;
+  padding:30px;
+}
+.Numbers-section p{
+  color:var(--text);
+}
+.Numbers-section h2{
+  color:var(--beige);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+.Numbers-section span{
+  color:var(--brown);
+}
+.number-part{
+  margin-top:20px;
+}
+
+/*Voice Section CSS*/
+.Client-Voice-Section{
+  height:70vh;
+  text-align: center;
+  padding-top:50px;
+}
+.quote-sign{
+  color:var(--brown);
+  font-size: 16px;
+  padding: 0;
+}
+.quote-sign span{
+  font-size:100px;
+  font-family:'Times New Roman', Times, serif;
+}
+.quote-line{
+  font-size: 35px;
+  color:var(--title-color);
+  font-style: italic;
+  font-family: serif;
+}
+.quote-owner{
+  color:var(--text);
+  font-size: 18px;
+}
+
+/*Contact-section CSS*/
+.contact-bnt-section{
+  padding: 100px;
+  background-color:var(--brown);
+  width: 100%;
+  min-height: 30vh;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.contact-bnt-section p{
+  font-size: 50px;
+  color:var(--beige);
+  font-family: serif;
+}
+.contact-bnt-section .contact-btn{
+  background-color: var(--beige);
+  padding:15px 25px 15px 25px;
+  border:none;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+.contact-bnt-section .contact-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(20, 20, 20, 0.2);
+}
